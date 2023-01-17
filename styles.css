@@ -10,10 +10,55 @@
     grid-template-rows: 1fr 5fr;
 }
 
+/*HEADER*/
 .header {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: yellow;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 3fr;
+}
+
+.header input {
+    grid-area: 1/1;
+    border-radius: 20px;
+    height: 25px;
+    background-color: lightblue;
+}
+
+.header #name1 {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.header .greet-div {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.header li {
+    list-style: none;
+}
+
+.header a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(20, 175, 236);
+    padding: 13px 40px;
+    border-radius: 40px;
+
 }
 
 /*SIDEBAR*/
