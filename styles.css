@@ -58,7 +58,23 @@
     background-color: rgb(20, 175, 236);
     padding: 13px 40px;
     border-radius: 40px;
+}
 
+.greet-div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.greet-div img {
+    grid-column: 1;
+    grid-row: 1/3;
+    justify-self: center;
+}
+
+.header #top {
+    grid-column: 2;
+    grid-row: 1;
 }
 
 /*SIDEBAR*/
@@ -86,8 +102,8 @@
     padding-top: 2vh;
     font-weight: bold;
     justify-content: center;
-
 }
+
 
 .sidebar a {
     text-decoration: none;
